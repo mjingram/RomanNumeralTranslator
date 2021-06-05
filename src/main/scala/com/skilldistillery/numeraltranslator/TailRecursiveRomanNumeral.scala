@@ -8,7 +8,8 @@ object TailRecursiveRomanNumeral {
     val input = new Scanner(System.in)
     println("Enter a number: ")
     val word: String = input.nextLine()
-    println(Main.translateWord(word))
+    println(s"Roman numeral translation of $word is: ")
+    println(TailRecursiveRomanNumeral.translateWord(word))
   }
   def translateWord(word: String): String = {
     var num: Int = 0
