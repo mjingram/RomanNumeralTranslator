@@ -18,6 +18,7 @@ object Main {
       case e: Exception => 0
     }
     val sb = new StringBuilder();
+
     while (num != 0) {
       if (num >= 1000) {
         sb ++= "M"
